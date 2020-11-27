@@ -17,7 +17,7 @@ class StoreRepository
     Store.where(name: name, owner: owner).first_or_create
   end
 
-  def get_by_id_with_transactions(id)
+  def get_by_id_with_transactions_and_transaction_types(id)
     Store.includes(:financial_transactions, :financial_transactions => :transaction_type).find(id)
   end
 end
