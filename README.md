@@ -74,3 +74,31 @@ Adicionalmente, tentaremos verificar a sua familiarização com as bibliotecas p
 ---
 
 Boa sorte!
+
+---
+
+## Executar o Projeto:
+
+### Versões
+- Ruby 2.7.1
+- Rails 6.0.3
+
+### Instalar Dependências
+```sh
+bundle install
+```
+
+### Criar Banco de Dados e Rodar Migrações
+```sh
+rails db:create && rails db:migrate && rails db:seed
+```
+
+### Executar Testes
+```sh
+rspec
+```
+
+### Rodar Servidor
+```sh
+rails server
+```
