@@ -88,9 +88,14 @@ Boa sorte!
 bundle install
 ```
 
-### Criar Banco de Dados e Rodar Migrações
+### Criar Banco de Dados
 ```sh
-rails db:create && rails db:migrate && rails db:seed
+rails db:create
+```
+
+### Rodar Migrações
+```sh
+rails db:migrate
 ```
 
 ### Executar Testes
