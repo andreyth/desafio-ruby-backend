@@ -1,0 +1,26 @@
+<div class="container">
+  <h3><%= @store.name %></h3>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Valor</th>
+        <th>Cpf</th>
+        <th>Cartão</th>
+        <th>Data e Hora</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @store.financial_transactions.each do |financial| %>
+        <tr>
+          <td><%= financial.transaction_type.description %> -> <b><%= financial.transaction_type.kind %></b></td>
+          <td><%= financial.transaction_type.token %> <%= financial.value %></td>
+          <td><%= financial.cpf %></td>
+          <td><%= financial.card %></td>
+          <td><%= financial.date_time_at %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

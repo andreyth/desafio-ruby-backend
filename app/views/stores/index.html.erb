@@ -14,7 +14,7 @@
         <tr>
           <td><%= store.name %></td>
           <td><%= store.owner %></td>
-          <td><%= link_to "Transações", stores_path(store.id) %></td>
+          <td><%= link_to "Transações", store_path(store) %></td>
         </tr>
       <% end %>
     </tbody>
