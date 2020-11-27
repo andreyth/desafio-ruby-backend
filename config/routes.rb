@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'stores#index'
+  
+  get 'stores', to: 'stores#index'
+
+  get 'financial_transactions', to: 'financial_transactions#index'
+  post 'financial_transactions', to: 'financial_transactions#create'
 end
